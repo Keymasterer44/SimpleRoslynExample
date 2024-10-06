@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "VariableNamingChecker": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\konni\\source\\repos\\RoslynExample\\SomeGenericSimpleApplication\\Program.cs"
+    }
+  }
+}

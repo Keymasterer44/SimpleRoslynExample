@@ -23,7 +23,7 @@ namespace VariableNamingChecker
             foreach (VariableDeclaratorSyntax declaration in badDeclarations)
             {
                 var linePos = declaration.GetLocation().GetLineSpan().StartLinePosition;
-                Console.WriteLine($"Variable at line {linePos.Line} col {linePos.Character} is called \"{declaration.Identifier.ValueText}\", recommended name is \"{ToCamelCase(declaration.Identifier.ValueText)}\"!");
+                Console.WriteLine($"Variable at line {linePos.Line+1} col {linePos.Character+1} is called \"{declaration.Identifier.ValueText}\", recommended name is \"{ToCamelCase(declaration.Identifier.ValueText)}\"!");
             }
         }
 
